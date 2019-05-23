@@ -5,9 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Hackathon_Team_JJSMB"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <CheckBox Content="bbbb" HorizontalAlignment="Left" Margin="302,138,0,0" VerticalAlignment="Top"/>
-
+        Title="Music" Height="473.95" Width="917.227">
+    <Grid Margin="0,0,-8,-31" DragEnter="ddd">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="474*"/>
+            <ColumnDefinition Width="443*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="Colorful-Music-CD_1920x1200.jpg"/>
+        </Grid.Background>
+        <DataGrid Height="321" Margin="10,41,0,0" VerticalAlignment="Top" SelectionChanged="DataGrid_SelectionChanged" Background="#FFD1C8C8" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="879">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nom :" Width="20*" />
+                <DataGridTextColumn Header="Titre :" Width="20*"/>
+                <DataGridTextColumn Header="Label:" Width="20*"/>
+                <DataGridTextColumn Header="Année de production :" Width="30*"/>
+                <DataGridTextColumn Header="Image" Width="20*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Supprimer" HorizontalAlignment="Left" Margin="372,373,0,0" VerticalAlignment="Top" Width="145" Height="41" Grid.ColumnSpan="2"/>
+        <Button Content="Modifier" HorizontalAlignment="Left" Margin="184,373,0,0" VerticalAlignment="Top" Width="145" Height="41"/>
+        <Button Content="Ajouter" HorizontalAlignment="Left" Margin="10,373,0,0" VerticalAlignment="Top" Width="145" Height="30"/>
+        <TextBox x:Name="textbox" HorizontalAlignment="Left" Height="34" Margin="172,380,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" Text="Recherche: " FontSize="20" Grid.Column="1" RenderTransformOrigin="0.407,0.4" />
     </Grid>
 </Window>

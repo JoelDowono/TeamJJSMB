@@ -1,4 +1,0 @@
-# TeamJJSMB
-hackathon 
-test
-gtdhtdjyufyjd
